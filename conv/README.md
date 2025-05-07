@@ -6,7 +6,7 @@ This project demonstrates different implementations of 2D convolution using CUDA
 
 - `src/`: Source files containing CUDA implementations.
 - `bin/`: Compiled binaries.
-- `common/`: Shared utilities or headers (if used).
+- `common/`: Shared utilities or headers.
 - `data/`: Input data or test images.
 
 ## Source Files
@@ -15,14 +15,8 @@ This project demonstrates different implementations of 2D convolution using CUDA
 - `conv_parallel_glb_mem.cu`: CUDA parallel implementation using global memory.
 - `conv_parallel_shr_mem.cu`: CUDA parallel implementation using shared memory.
 
-## Build Instructions
-
-```bash
-make
-```
-
 ### Run Instructions
-
+- Use the run.sh script for automated execution.
 ```bash
 ./run.sh
 ```

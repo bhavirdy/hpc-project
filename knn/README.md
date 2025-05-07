@@ -14,12 +14,6 @@ This project implements the K-Nearest Neighbors algorithm with both serial and p
 - `knn_parallel_sections.cpp`: Parallel version using OpenMP `sections`.
 - `knn_parallel_tasks.cpp`: Parallel version using OpenMP `tasks`.
 
-## Build Instructions
-
-```bash
-make
-```
-
 ## Run Instructions
 - Use the run.sh script for automated execution.
 ```bash

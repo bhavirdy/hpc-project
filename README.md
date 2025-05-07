@@ -13,12 +13,12 @@ Each subproject includes:
 - CUDA-capable GPU for `conv/`
 
 ## Getting Started
+- Use the run.sh scripts for automated execution.
 
 ```bash
 cd conv
-make
 ./run.sh
 
 cd ../knn
-make
 ./run.sh
+```
