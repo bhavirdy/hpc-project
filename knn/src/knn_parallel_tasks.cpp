@@ -51,7 +51,7 @@ private:
     void task_quicksort(vector<pair<double, int>>& vec, int l, int h) {
         if (l < h) {
             int j = partition(vec, l, h);
-            if ((h - l) > 1000) {
+            if ((h - l) > 500) {
                 #pragma omp task shared(vec)
                 task_quicksort(vec, l, j - 1);
                 #pragma omp task shared(vec)
