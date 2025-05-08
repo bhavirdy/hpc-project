@@ -85,7 +85,13 @@ public:
 
         // 2. Sort distances
         start_time = omp_get_wtime();
-        task_quicksort(distances, 0, distances.size() - 1);
+        #pragma omp parallel
+        {
+            #pragma omp single
+            {
+                task_quicksort(distances, 0, distances.size() - 1);
+            }
+        }
         end_time = omp_get_wtime();
         sort_time = (end_time - start_time);
 
